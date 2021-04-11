@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "parcel index.html --port 3000",
+    "predeploy": "rm -rf dist && parcel build index.html --public-url /haris-algolia-assignment",
     "build": "parcel build index.html",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix"
